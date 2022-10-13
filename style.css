@@ -69,3 +69,17 @@ input[type=email], select, textarea {
     box-sizing: border-box;
     resize: vertical;
 }
+
+.social_icons{
+    list-style: none;
+    display: inline-flex;
+}
+
+.social_icon_item{
+    padding-left: 10px;
+}
+
+.social_icon_item:hover {
+    transform: translateY(-4px);
+    transition:0.3s;
+}
