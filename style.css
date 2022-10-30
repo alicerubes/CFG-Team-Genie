@@ -150,10 +150,11 @@ input[type=email], select, textarea {
 .social_icons{
     list-style: none;
     display: inline-flex;
+    margin-left: 42.75%
 }
 
 .social_icon_item{
-    padding-left: 10px;
+    padding-left: 45%;
 }
 
 .social_icon_item:hover {
@@ -218,3 +219,4 @@ input[type=email], select, textarea {
 }
 
 /* Women In Code Flip Cards End */
+
