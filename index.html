@@ -66,7 +66,7 @@
         </nav>
     </div>
 
-    <!-- CAROUSEL START -->
+    <!-- carousel START -->
     <div id="carouselWomen" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselWomen" data-slide-to="0" class="active"></li>
@@ -105,51 +105,84 @@
             <span class="sr-only">Next</span>
         </button>
     </div>
-    <!-- CAROUSEL END -->
+    <!-- carousel END -->
 
-    <!-- contact form start -->
-    <button class="open-button" onclick="openForm()">Contact Team Genie</button>
 
-    <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-            <h3>Got a question?</h3>
-            <p>Or maybe you just want to compliment our beautiful website ;)</p>
-
-            <label for="fname"><b>First Name*</b></label>
-            <input type="text" placeholder="First Name" name="fname" required>
-
-            <label for="lname"><b>Last Name</b></label>
-            <input type="text" placeholder="Last Name" name="lname">
-
-            <label for="country"><b>Country</b></label>
-                <select id="country" name="country">
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Canada">Canada</option>
-                    <option value="USA">USA</option>
-                    <option value="Germany">Germany</option>
-                    <option value="France">France</option>
-                    <option value="Spain">Spain</option>
-                    <option value="Italy">Italy</option>
-                    <option value="Netherlands">Netherlands</option>
-                    <option value="Belgium">Belgium</option>
-                </select>
-        
-            <label for="email"><b>Email*</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-
-            <label for="message"><b>Message*</b></label>
-            <textarea id="message" name="message" placeholder="Write to us..." style="height:200px" required></textarea>
-
-            <input class="form-check-input" type="checkbox" id="gridCheck" required>
-            <label class="form-check-label" for="gridCheck">
-                I have read and agree to the <a href="./privacy.html">privacy policy</a>.*
-            </label>
-
-            <button type="submit" class="btn">Submit</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <!-- contact form START -->
+    <div class="contact-head">
+        <h4>Contact Team Genie</h4>
+        <p>Want to ask us a question? Or maybe you just want to compliment our beautiful website? Let us know using the contact form below!</p>
+    </div>
+    <div class="container">
+        <!-- maybe have a thank you popup message instead of link to new page - again will use JavaScript for this -->
+        <form action="./thankyou.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name*</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="First name..." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Last name...">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="USA">USA</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="Belgium">Belgium</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email*</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="message">Message*</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="message" name="message" placeholder="Write to us..." style="height:200px" required></textarea>
+                </div>
+            </div>
+            <!-- open privacy policy in popup - looks like we can do this with JavaScript so will come back to this! for now it links to a separate page -->
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                  <label class="form-check-label" for="gridCheck">
+                    I have read and agree to the <span class="popup" onclick="myFunction()">privacy policy</span>.*
+                  </label>
+                  <span class="popuptext" id="myPopup">privacy policy text here</span>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </div>
-    <!-- contact form end -->
+    <!-- contact form END -->
+
 
     <!-- arrow at bottom of page -->
     <div class="fa-3x">

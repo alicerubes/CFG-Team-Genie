@@ -1,3 +1,5 @@
+/* Navbar START */
+
 .fa-3x{
     text-align: center;
 }
@@ -30,7 +32,23 @@ input[type=submit] {
     float: right;
 }
 
+/* Navbar END */
+
+/* Contact Form START */
+
+.contact-head {
+    padding-top: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container-index {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -38,13 +56,13 @@ input[type=submit] {
 
 .col-25 {
     float: left;
-    width: 25%;
+    width: 30%;
     margin-top: 6px;
 }
 
 .col-75 {
     float: left;
-    width: 75%;
+    width: 70%;
     margin-top: 6px;
 }
 
@@ -70,82 +88,70 @@ input[type=email], select, textarea {
     resize: vertical;
 }
 
-/* Popup form start */
+/* Contact Form END */
 
 
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
+/* Popup Privacy Policy START */
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
     background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+  
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+  
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
 
-/* The popup form - hidden by default */
-.form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-}
-
-/* Add styles to the form container */
-.form-container {
-    max-width: 600px;
-    padding: 10px;
-    background-color: white;
-}
-
-/* Full-width input fields */
-.form-container input[type=text] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-}
-
-/* When the inputs get focus, do something */
-.form-container input[type=text]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-    background-color: red;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-}
-
-/* Popup form end */
+/* Popup Privacy Policy END */
 
 
-/* Social Icons Start */
+/* Social Icons START */
 
 .social_icons{
     list-style: none;
@@ -161,10 +167,10 @@ input[type=email], select, textarea {
     transition:0.3s;
 }
 
-/* Social Icons End */
+/* Social Icons END */
 
 
-/* Women In Code Flip Cards Start */
+/* Women In Code Flip Cards START */
 
 .flip-card-section{
     display: inline-flex;
@@ -217,4 +223,4 @@ input[type=email], select, textarea {
     transform: rotateY(180deg);
 }
 
-/* Women In Code Flip Cards End */
+/* Women In Code Flip Cards END */
