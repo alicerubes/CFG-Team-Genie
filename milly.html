@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Milly</title>
 <!-- vv BOOTSTRAP STYLESHEET vv-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
@@ -20,6 +20,8 @@
 
         <!-- top navbar with logo & search bar -->
         <div>
+            <label class="logo">Team Genie</label>
+            <img src="Teamgenielogo.png" width="150" height="90">
             <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand" href="#">
                     <!-- vv LOGO PLACEHOLDER vv -->
@@ -35,6 +37,7 @@
 
         <!-- 2nd navbar with links -->
         <div>
+            <nav class="Home"></nav>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +47,7 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="profiles dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                             Get to know Team Genie
                             </a>
@@ -55,10 +58,10 @@
                                 <a class="dropdown-item" href="./hazel.html">Hazel</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="Women in Code">
                             <a class="nav-link" href="./women_in_code.html">Women in Code</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="Contact us">
                             <a class="nav-link" href="./contact.html">Contact Us</a>
                         </li>
                     </ul>
@@ -67,138 +70,78 @@
         </div>
     </header>
 
-
     <main>
-        <!-- contact form START -->
-        <div class="container">
-            <!-- maybe have a thank you popup message instead of link to new page - again will use JavaScript for this -->
-            <form action="./thankyou.html">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="fname">First Name*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="First name..." required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Last Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Last name...">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="country">Country</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="country" name="country">
-                            <option value="United Kingdom">United Kingdom</option>
-                            <option value="Canada">Canada</option>
-                            <option value="USA">USA</option>
-                            <option value="Germany">Germany</option>
-                            <option value="France">France</option>
-                            <option value="Spain">Spain</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Netherlands">Netherlands</option>
-                            <option value="Belgium">Belgium</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="email">Email*</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="message">Message*</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="message" name="message" placeholder="Write to us..." style="height:200px" required></textarea>
-                    </div>
-                </div>
-                <!-- open privacy policy in popup - looks like we can do this with JavaScript so will come back to this! for now it links to a separate page -->
-                <div class="form-group">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
-                    <label class="form-check-label" for="gridCheck">
-                        I have read and agree to the <span class="popup" onclick="myFunction()">privacy policy</span>.*
-                    </label>
-                    <span class="popuptext" id="myPopup">privacy policy text here</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </div>
-        <!-- contact form END -->
+
+
+
+
+
+
+
+
+
+
     </main>
+
     
-<!-- Footer -->
+    <!-- Footer -->
 
     <footer class="page-footer font-small blue pt-4">
 
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
     
-        <!-- Grid row -->
-        <div class="row">
-    
-            <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
-    
+            <!-- Grid row -->
+            <div class="row">
+        
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+        
                 <!-- Footer content -->
                 <h5 class="text-uppercase">About Us</h5>
                 <p>Thank you for visiting our first website!<br>We created this website as our final project for the Code First Girls 'Introduction to Web Development' course.</p>
-    
-            </div>
-            <!-- Grid column -->
-    
-            <hr class="clearfix w-100 d-md-none pb-3">
-    
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-    
-    
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-    
-            <!-- Footer links -->
-                <h5 class="text-uppercase">Important Links</h5>
         
-                <ul class="list-unstyled">
-                    <li>
+                </div>
+                <!-- Grid column -->
+    
+                <hr class="clearfix w-100 d-md-none pb-3">
+    
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+        
+    
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+    
+                    <!-- Footer links -->
+                    <h5 class="text-uppercase">Important Links</h5>
+            
+                    <ul class="list-unstyled">
+                        <li>
                         <a href="./aaliyah.html">Aaliyah</a>
-                    </li>
-                    <li>
+                        </li>
+                        <li>
                         <a href="./alice.html">Alice</a>
-                    </li>
-                    <li>
+                        </li>
+                        <li>
                         <a href="./molly.html">Milly</a>
-                    </li>
-                    <li>
+                        </li>
+                        <li>
                         <a href="./hazel.html">Hazel</a>
-                    </li>
-                    <li>
-                        <a href="./women_in_code.html">Women in Code</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <a href="./women_in_code.html">Women in Code</a>
+                        </li>
+                    </ul>
+            
+                </div>
+                <!-- Grid column -->
     
             </div>
-            <!-- Grid column -->
-    
-        </div>
-        <!-- Grid row -->
+            <!-- Grid row -->
     
         </div>
         <!-- Footer Links -->
@@ -226,7 +169,9 @@
     
     </footer>
  
-    <script src="./js.js"></script>    
+    
+
+    <script src="./js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
