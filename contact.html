@@ -75,7 +75,7 @@
         </div>
         <div class="container">
             <!-- maybe have a thank you popup message instead of link to new page - again will use JavaScript for this -->
-            <form action="./thankyou.html">
+            <form>
                 <div class="row">
                     <div class="col-25">
                         <label for="fname">First Name*</label>
@@ -135,7 +135,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" id="nextStep">
+                </div>
+                <div id="thank_you" style="display: none;">
+                    <p>Thanks for getting in touch! We'll get back to you once we learn how to hehe</p>
+                    <button type="submit">Close</button>
                 </div>
             </form>
         </div>
