@@ -120,6 +120,34 @@ input [type=button] {
     color: #2a2b6d;
 }
 
+/* Hyperlink colours START */
+
+a:link {
+  color: #2a2b6d;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2a2b6d;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #797ab3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #797ab3;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Hyperlink colours END */
+
 
 /* Social Icons START */
 
