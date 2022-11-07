@@ -23,7 +23,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #2a2b6d;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -88,13 +88,30 @@ input[type=email], select, textarea {
     resize: vertical;
 }
 
+input [type=button] {
+    background-color: #2a2b6d;
+}
+
 /* Contact Form END */
 
+
+
 .carousel-caption {
-    background-color: rgba(108, 122, 137, .6);;
+    background-color: rgba(121, 122, 180, .6);
 }
 
 
+.privacy-policy {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.privacy-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
 /* Popup Privacy Policy START */
 
@@ -223,11 +240,9 @@ input[type=email], select, textarea {
 }
 
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #2a2b6d;
     color: white;
     transform: rotateY(180deg);
 }
 
 /* Women In Code Flip Cards END */
-/* Women In Code Flip Cards End */
-
