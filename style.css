@@ -120,6 +120,7 @@ input [type=button] {
     color: #2a2b6d;
 }
 
+
 /* Hyperlink colours START */
 
 a:link {
@@ -147,6 +148,63 @@ a:active {
 }
 
 /* Hyperlink colours END */
+
+
+
+/* Alice page START */
+
+#about-section {
+    background: rgba(32, 33, 36, 0.1);
+    position: relative;
+}
+
+.blockabout {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+.blockabout-inner {
+    padding: 30px;
+    border: 1px solid #797ab364;
+    border-radius: 5px;
+}
+
+.sosmed-horizontal a i {
+    border: 1px solid #2a2b6d;
+    border-radius: 50%;
+    color: #2a2b6d;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.rey-btn {
+    border: 2px solid #2a2b6d;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.roundcorners {
+    border-radius: 10px;
+}
+
+.title-big {
+    color: #2a2b6d;
+}
+
+/* Alice page END */
+
 
 
 /* Social Icons START */
