@@ -90,6 +90,10 @@ input[type=email], select, textarea {
 
 /* Contact Form END */
 
+.carousel-caption {
+    background-color: rgba(108, 122, 137, .6);;
+}
+
 
 
 /* Popup Privacy Policy START */
