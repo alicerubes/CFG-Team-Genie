@@ -43,6 +43,54 @@ input[type=submit] {
     cursor: pointer;
     float: right;
 }
+ 
+.dropdown-menu:hover {
+    color: purple;
+    width: 100%;
+    position: relative;
+    }
+     
+    .dropdown-menu::before{
+    content:'';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: purple;
+     
+    position: absolute;
+    top: 0;
+    width: 0px;
+     
+    transition: all ease-in-out 300ms;
+    }
+     
+    .dropdown-menu::before{
+    width: 100%;
+    }
+     
+    .dropdown-item:hover {
+       color: purple;
+    width: 100%;
+    position: relative;
+    }
+     
+    .dropdown-item::before{
+    content:'';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: purple;
+     
+    position: absolute;
+    top: 0;
+    width: 0px;
+     
+    transition: all ease-in-out 300ms;
+    }
+     
+    .dropdown-item::before{
+    width: 100%;
+    }    
 
 /* Navbar END */
 
