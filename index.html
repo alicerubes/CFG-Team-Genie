@@ -178,10 +178,18 @@
                 </div>
                 <div class="row">
                     <input type="submit" value="Submit">
-                </div>
-                <div id="thank_you" style="display: none;">
-                    <p>Thanks for getting in touch! We'll get back to you once we learn how to hehe</p>
-                    <button type="submit">Close</button>
+                    <div class="modal" id="modal">
+                        <div class="modal-header">
+                            <div class="modal-title">
+                                Thanks for getting in touch!
+                            </div>
+                            <button class="close-modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            We'll get back to you once we learn how to use SQL ;)
+                        </div>
+                    </div>
+                    <div id="modal-overlay"></div>
                 </div>
             </form>
         </div>
