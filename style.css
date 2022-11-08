@@ -126,10 +126,19 @@ input[type=submit] {
     margin-top: 6px;
 }
 
+.form-check {
+    padding-top: 10px;
+    display: inline-flexbox;
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.row {
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -153,6 +162,73 @@ input [type=button] {
 }
 
 /* Contact Form END */
+
+
+
+/* Popup thank you START */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px, 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px, 15px;
+}
+
+#modal-overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#modal-overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+/* Popup thank you END */
 
 
 
