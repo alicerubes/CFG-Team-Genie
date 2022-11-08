@@ -44,9 +44,10 @@ input[type=submit] {
     float: right;
 }
  
+ 
 .dropdown-menu:hover {
-    color: purple;
-    width: 100%;
+    color: rgb(105, 70, 159);
+    width: 40px;
     position: relative;
     }
      
@@ -54,14 +55,14 @@ input[type=submit] {
     content:'';
     display: block;
     height: 5px;
-    width: 100%;
-    background-color: purple;
+    width: 40px;
+    background-color: rgb(105, 70, 159);
      
     position: absolute;
-    top: 0;
+    top: 0px;
     width: 0px;
      
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 500ms;
     }
      
     .dropdown-menu::before{
@@ -69,8 +70,8 @@ input[type=submit] {
     }
      
     .dropdown-item:hover {
-       color: purple;
-    width: 100%;
+       color: rgb(105, 70, 159);
+    width: 50px;
     position: relative;
     }
      
@@ -79,13 +80,13 @@ input[type=submit] {
     display: block;
     height: 5px;
     width: 100%;
-    background-color: purple;
+    background-color: rgb(105, 70, 159);
      
     position: absolute;
     top: 0;
     width: 0px;
      
-    transition: all ease-in-out 300ms;
+    transition: all ease-in-out 500ms;
     }
      
     .dropdown-item::before{
