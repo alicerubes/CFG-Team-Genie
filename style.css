@@ -419,3 +419,9 @@ a:active {
 }
 
 /* Women In Code Flip Cards END */
+
+/* Footer START */
+
+.footerImage{
+    width: 25%;
+}
