@@ -1,3 +1,58 @@
+// Quote gen START
+
+const generateQuote = function() {
+    const quotes = [
+    {
+        quote: "“The most alluring thing a woman can have is confidence.”",
+        author: "- Beyoncé Knowles"
+    },
+    {
+        quote: "“Ignore the glass ceiling and do your work. If you’re focusing on the glass ceiling, focusing on what you don’t have, focusing on the limitations, then you will be limited.”",
+        author: "- Ava DuVernay"
+    },
+    {
+        quote: "“A girl should be two things: who and what she wants.”",
+        author: "- Coco Chanel"
+    },
+    {
+        quote: "“We all move forward when we racognize how resilient and striking the women around us are.”",
+        author: "- Rupi Kaur"
+    },
+    {
+        quote: "“They'll tell you you're too loud, that you need to wait your turn and ask the right people for permission. Do it anyway.”",
+        author: "- Alexandria Ocasio Cortez"
+    },
+    {
+        quote: "“Women are the real architects of society.”",
+        author: "- Cher"
+    },
+    {
+        quote: "“There’s something special about a woman who dominates in a man’s world. It takes a certain grace, strength, intelligence, fearlessness, and the nerve to never take no for an answer.”",
+        author: "- Rihanna"
+    },
+    {
+        quote: "“Girls should never be afraid to be smart.”",
+        author: "- Emma Watson"
+    },
+    {
+        quote: "“Think like a queen. A queen is not afraid to fail. Failure is another steppingstone to greatness.”",
+        author: "- Oprah Winfrey"
+    }
+];
+
+    let arrayIndex = Math.floor(Math.random() * quotes.length);
+    document.getElementById("quotes").innerHTML = quotes[arrayIndex].quote;
+    document.getElementById("author").innerHTML = quotes[arrayIndex].author;
+
+}
+window.onload = function() {
+    generateQuote();
+    document.getElementById("generate").addEventListener('click', generateQuote);
+}
+
+// Quote gen END
+
+
 // Alice page START
 
 var testi = $('#testimonial-slide');

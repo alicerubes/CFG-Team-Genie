@@ -103,7 +103,32 @@ label {
     text-align: center;
 }
 
+.quote-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid none;
+    background-color: #797ab346;
+    color: #2a2b6d;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#author {
+    font-style: italic;
+}
+
+#quotes {
+    font-size: 1.5em;
+}
+
 /* Index text END */
+
+
 
 /* Contact Form START */
 
