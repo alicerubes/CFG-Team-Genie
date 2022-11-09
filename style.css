@@ -33,16 +33,6 @@ label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-
-input[type=submit] {
-    background-color: #2a2b6d;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
  
  
 .dropdown-menu:hover {
@@ -99,6 +89,7 @@ input[type=submit] {
     color: white;
     transition: 0.4s;
 }
+
 /* Navbar END */
 
 /* Contact Form START */
@@ -164,9 +155,41 @@ input[type=email], select, textarea, text {
     resize: vertical;
 }
 
-input [type=button] {
-    background-color: #2a2b6d;
+.btn.rey-btn.mt-3 {
+    border: 2px solid #2a2b6d;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s;
 }
+
+.btn.rey-btn.mt-3:hover {
+    color: white;
+    border-color: #797ab387;
+    background-color: #797ab387;
+}
+
+.fa.fa-facebook:hover {
+    color: white;
+    border-color: #797ab387;
+    background-color: #797ab387;
+}
+
+.fa.fa-instagram:hover {
+    color: white;
+    border-color: #797ab387;
+    background-color: #797ab387;
+}
+
+.fa.fa-linkedin:hover {
+    color: white;
+    border-color: #797ab387;
+    background-color: #797ab387;
+}
+
 
 /* Contact Form END */
 
