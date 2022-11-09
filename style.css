@@ -93,6 +93,12 @@ input[type=submit] {
     width: 100%;
     }    
 
+.nav-link:hover {
+    background-color: rgb(105, 70, 159, .5);
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s;
+}
 /* Navbar END */
 
 /* Contact Form START */
@@ -235,6 +241,7 @@ input [type=button] {
 
 .carousel-caption {
     background-color: rgba(121, 122, 180, .6);
+    border-radius: 5px;
 }
 
 
