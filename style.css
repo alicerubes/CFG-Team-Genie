@@ -1,13 +1,17 @@
+/* Carousel START */
+
 .imgcarousel {
-    width: 100%;
+    width: 85%;
     height: 500px;
+    margin-left: 10%;
 
 }
-.imgcollection {
-    display: flex;
-    /* margin: auto auto; */
-    margin-left: 20%;
+
+.carousel-caption {
+    background-color: rgba(121, 122, 180, .6);
 }
+
+/* Carousel END */
 
 
 /* Navbar START */
@@ -493,6 +497,12 @@ a:active {
     color: white;
     transform: rotateY(180deg);
     padding-top: 10px;
+}
+
+.imgcollection {
+    display: flex;
+    /* margin: auto auto; */
+    margin-left: 20%;
 }
 
 /* Women In Code Flip Cards END */
