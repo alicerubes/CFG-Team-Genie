@@ -244,6 +244,15 @@ input [type=button] {
     border-radius: 5px;
 }
 
+.btn.btn-outline-success.my-2.my-sm-0 {
+    border-color: rgb(105, 70, 159);
+    color: rgb(105, 70, 159);
+}
+
+.btn.btn-outline-success.my-2.my-sm-0:hover {
+    background-color: rgb(105, 70, 159);
+    color: white;
+}
 
 .privacy-policy {
     text-align: center;
